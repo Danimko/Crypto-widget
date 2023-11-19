@@ -1,12 +1,4 @@
-import { useContext } from "react";
-import { DataContext } from "../Home";
-import { core } from "../../fetch/fetch";
-
 export const ContentBottom = () => {
-  const data = useContext(DataContext);
-  const dataForImg = data?.data.RAW.OMG.RUB.FROMSYMBOL;
-  console.log(data);
-
   return (
     <div className={"content__bottom--wrapper"}>
       <div className={"content__bottom"}>

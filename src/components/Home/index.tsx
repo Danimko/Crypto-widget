@@ -1,11 +1,14 @@
 import { useQuery } from "@tanstack/react-query";
-import { fetchCurrencies } from "../../fetch/fetch";
+import { fetchCurrencies } from "../../axios/fetch";
 import { Content } from "../Content";
 import { createContext } from "react";
 import { Navbar } from "../Navbar";
 import { Preloader } from "../Preloader";
+import { AxiosResponse } from "axios";
 
-export const DataContext = createContext<object>({});
+export const DataContext = createContext<AxiosResponse<any, any> | undefined>(
+  undefined
+);
 
 export const Home = () => {
   const { data, isFetched } = useQuery({
