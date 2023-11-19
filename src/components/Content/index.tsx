@@ -1,7 +1,7 @@
-import { ContentTop } from "../ContentTop";
-import { ContentMiddle } from "../ContentMiddle";
-import { MyChart } from "../MyChart";
-import { ContentBottom } from "../ContentBottom";
+import { ContentTop } from "../ContentTop/index";
+import { ContentMiddle } from "../ContentMiddle/index";
+import { MyChart } from "../MyChart/index";
+import { ContentBottom } from "../ContentBottom/index";
 import { useQuery } from "@tanstack/react-query";
 import { fetchCoinVolume } from "../../axios/fetch";
 import { AxiosResponse } from "axios";

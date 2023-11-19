@@ -1,5 +1,5 @@
-import { Header } from "../Header";
-import { Home } from "../Home";
+import { Header } from "../Header/index";
+import { Home } from "../Home/index";
 
 export const MainLayout = () => {
   return (

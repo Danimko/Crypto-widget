@@ -1,9 +1,9 @@
 import { useQuery } from "@tanstack/react-query";
 import { fetchCurrencies } from "../../axios/fetch";
-import { Content } from "../Content";
+import { Content } from "../Content/index";
 import { createContext } from "react";
-import { Navbar } from "../Navbar";
-import { Preloader } from "../Preloader";
+import { Navbar } from "../Navbar/index";
+import { Preloader } from "../Preloader/index";
 import { AxiosResponse } from "axios";
 
 export const DataContext = createContext<AxiosResponse<any, any> | undefined>(

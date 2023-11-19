@@ -11,7 +11,7 @@ export const MyChart = ({
 }) => {
   const dataForChart = dataVolume?.data.Data;
   const data = useMemo(
-    (): any => [
+    () => [
       {
         label: "Series 1",
         data: dataForChart?.map((item: any) => ({
